@@ -50,12 +50,12 @@
     </section>
 
     <!-- Quick Links to Other Pages -->
-    <section class="section section-alt">
+    <section class="section section-alt solutions-section">
       <h2 class="section-title">Explore Our <span>Solutions</span></h2>
       <div class="section-subtitle">Comprehensive Farm Management</div>
-      <div class="cards-grid">
+      <div class="cards-grid solutions-grid">
         <div class="card">
-          <img src="https://cdn.prod.website-files.com/64247ee2293b8621e454f004/68ef431ce6c24318dde140be_Herd%20of%20cows.jpg" alt="Livestock" class="card-img">
+          <img src="https://cdn.prod.website-files.com/64247ee2293b8621e454f004/68ef431ce6c24318dde140be_Herd%20of%20cows.jpg" alt="Livestock" class="card-img card-img-small">
           <div class="card-content">
             <h3>🐄 Livestock Management</h3>
             <p>Advanced herd tracking, AI-powered health monitoring, and automated feeding systems for cattle, poultry, and sheep.</p>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://i.pinimg.com/736x/1e/69/60/1e696035de8fabfd51c5e53b4181bbb4.jpg" alt="Aquaculture" class="card-img">
+          <img src="https://i.pinimg.com/736x/1e/69/60/1e696035de8fabfd51c5e53b4181bbb4.jpg" alt="Aquaculture" class="card-img card-img-small">
           <div class="card-content">
             <h3>🐟 Aquaculture</h3>
             <p>Smart pond management, water quality control, and sustainable fish farming solutions.</p>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://i.pinimg.com/736x/0a/ad/28/0aad2811cb03d6da79e3239c6daadcc3.jpg" alt="Crops" class="card-img">
+          <img src="https://i.pinimg.com/736x/0a/ad/28/0aad2811cb03d6da79e3239c6daadcc3.jpg" alt="Crops" class="card-img card-img-small">
           <div class="card-content">
             <h3>🌾 Crop Planning</h3>
             <p>AI-powered crop rotation, smart irrigation, and harvest forecasting for maximum yields.</p>
@@ -207,6 +207,34 @@ onUnmounted(() => {
   
   .about-intro-content .section-title {
     text-align: center;
+  }
+}
+
+/* Solutions Section - Full Width */
+.solutions-section {
+  max-width: 100% !important;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 6rem 5%;
+  border-radius: 0;
+}
+
+.solutions-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card-img-small {
+  height: 180px !important;
+}
+
+@media (max-width: 768px) {
+  .solutions-section {
+    padding: 4rem 5%;
+  }
+  
+  .card-img-small {
+    height: 150px !important;
   }
 }
 </style>
