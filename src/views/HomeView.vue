@@ -13,7 +13,8 @@
         <div class="hero-overlay">
           <div class="hero-content">
             <h1>Agri<span class="gold-text">Legacy</span></h1>
-            <p>Building Tomorrow's Farms Today — Since 1985</p>
+            <p class="hero-tagline">Building Tomorrow's Farms Today — Since 1985</p>
+            <p class="hero-subtitle">Trusted by 15,000+ farmers across 45+ countries</p>
             <router-link to="/services" class="cta-button">Explore Solutions</router-link>
             <router-link to="/contact" class="cta-button cta-button-outline">Schedule Consultation</router-link>
           </div>
@@ -280,4 +281,43 @@ img[src] {
   background: linear-gradient(90deg, #2a2a35 25%, #1a1a24 50%, #2a2a35 75%);
   background-size: 200% 100%;
 }
+
+/* Hero Text Styling */
+.hero-tagline {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-weight: 400;
+  animation: fadeInUp 1s ease 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-tagline {
+    font-size: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
 </style>
+
