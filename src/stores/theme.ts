@@ -9,14 +9,24 @@ export const useThemeStore = defineStore('theme', () => {
     if (savedTheme === 'dark') {
       isDark.value = true
       document.documentElement.setAttribute('data-theme', 'dark')
+      document.body.setAttribute('data-theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+      document.body.removeAttribute('data-theme')
     }
   }
 
   function toggleTheme() {
     isDark.value = !isDark.value
-    const theme = isDark.value ? 'dark' : 'light'
-    document.documentElement.setAttribute('data-theme', theme)
-    localStorage.setItem('theme', theme)
+    if (isDark.value) {
+      document.documentElement.setAttribute('data-theme', 'dark')
+      document.body.setAttribute('data-theme', 'dark')
+      localStorage.setItem('theme', 'dark')
+    } else {
+      document.documentElement.removeAttribute('data-theme')
+      document.body.removeAttribute('data-theme')
+      localStorage.setItem('theme', 'light')
+    }
   }
 
   return { isDark, initTheme, toggleTheme }
