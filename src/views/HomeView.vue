@@ -21,6 +21,17 @@
       </div>
     </section>
 
+    <!-- Statistics -->
+    <div class="stats">
+      <div class="stats-grid">
+        <div class="stat-item"><h3>15,000+</h3><p>Happy Farmers</p></div>
+        <div class="stat-item"><h3>1.2M+</h3><p>Acres Managed</p></div>
+        <div class="stat-item"><h3>99%</h3><p>Satisfaction Rate</p></div>
+        <div class="stat-item"><h3>24/7</h3><p>Expert Support</p></div>
+        <div class="stat-item"><h3>45+</h3><p>Countries Served</p></div>
+      </div>
+    </div>
+
     <!-- About Intro -->
     <section class="section">
       <div style="text-align: center; max-width: 800px; margin: 0 auto;">
@@ -64,17 +75,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Statistics -->
-    <div class="stats">
-      <div class="stats-grid">
-        <div class="stat-item"><h3>15,000+</h3><p>Happy Farmers</p></div>
-        <div class="stat-item"><h3>1.2M+</h3><p>Acres Managed</p></div>
-        <div class="stat-item"><h3>99%</h3><p>Satisfaction Rate</p></div>
-        <div class="stat-item"><h3>24/7</h3><p>Expert Support</p></div>
-        <div class="stat-item"><h3>45+</h3><p>Countries Served</p></div>
-      </div>
-    </div>
 
     <!-- Timeline -->
     <section class="section">
