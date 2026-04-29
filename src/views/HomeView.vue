@@ -34,13 +34,18 @@
 
     <!-- About Intro -->
     <section class="section">
-      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <h2 class="section-title">Welcome to <span>AgriLegacy</span></h2>
-        <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">
-          For over three decades, AgriLegacy has been at the forefront of agricultural innovation, 
-          helping farmers worldwide achieve sustainable growth, increased productivity, and lasting prosperity. 
-          Our integrated approach combines traditional wisdom with cutting-edge technology.
-        </p>
+      <div class="about-intro-container">
+        <div class="about-intro-image">
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200" alt="Modern Agriculture" />
+        </div>
+        <div class="about-intro-content">
+          <h2 class="section-title">Welcome to <span>AgriLegacy</span></h2>
+          <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+            For over three decades, AgriLegacy has been at the forefront of agricultural innovation, 
+            helping farmers worldwide achieve sustainable growth, increased productivity, and lasting prosperity. 
+            Our integrated approach combines traditional wisdom with cutting-edge technology.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -149,3 +154,59 @@ onUnmounted(() => {
   clearInterval(carouselInterval)
 })
 </script>
+
+<style scoped>
+.about-intro-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-intro-image {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about-intro-image:hover img {
+  transform: scale(1.05);
+}
+
+.about-intro-content {
+  padding: 2rem;
+}
+
+.about-intro-content .section-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .about-intro-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-intro-image {
+    height: 300px;
+  }
+  
+  .about-intro-content {
+    padding: 1rem;
+  }
+  
+  .about-intro-content .section-title {
+    text-align: center;
+  }
+}
+</style>
