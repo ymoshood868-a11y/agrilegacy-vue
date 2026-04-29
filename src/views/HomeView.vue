@@ -36,7 +36,7 @@
     <section class="section">
       <div class="about-intro-container">
         <div class="about-intro-image">
-          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200" alt="Modern Agriculture" />
+          <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80&auto=format" alt="Modern Agriculture" loading="lazy" />
         </div>
         <div class="about-intro-content">
           <h2 class="section-title">Welcome to <span>AgriLegacy</span></h2>
@@ -55,7 +55,7 @@
       <div class="section-subtitle">Comprehensive Farm Management</div>
       <div class="cards-grid solutions-grid">
         <div class="card">
-          <img src="https://cdn.prod.website-files.com/64247ee2293b8621e454f004/68ef431ce6c24318dde140be_Herd%20of%20cows.jpg" alt="Livestock" class="card-img card-img-small">
+          <img src="https://cdn.prod.website-files.com/64247ee2293b8621e454f004/68ef431ce6c24318dde140be_Herd%20of%20cows.jpg" alt="Livestock" class="card-img card-img-small" loading="lazy">
           <div class="card-content">
             <h3>🐄 Livestock Management</h3>
             <p>Advanced herd tracking, AI-powered health monitoring, and automated feeding systems for cattle, poultry, and sheep.</p>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://i.pinimg.com/736x/1e/69/60/1e696035de8fabfd51c5e53b4181bbb4.jpg" alt="Aquaculture" class="card-img card-img-small">
+          <img src="https://i.pinimg.com/736x/1e/69/60/1e696035de8fabfd51c5e53b4181bbb4.jpg" alt="Aquaculture" class="card-img card-img-small" loading="lazy">
           <div class="card-content">
             <h3>🐟 Aquaculture</h3>
             <p>Smart pond management, water quality control, and sustainable fish farming solutions.</p>
@@ -71,7 +71,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://i.pinimg.com/736x/0a/ad/28/0aad2811cb03d6da79e3239c6daadcc3.jpg" alt="Crops" class="card-img card-img-small">
+          <img src="https://i.pinimg.com/736x/0a/ad/28/0aad2811cb03d6da79e3239c6daadcc3.jpg" alt="Crops" class="card-img card-img-small" loading="lazy">
           <div class="card-content">
             <h3>🌾 Crop Planning</h3>
             <p>AI-powered crop rotation, smart irrigation, and harvest forecasting for maximum yields.</p>
@@ -113,9 +113,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const slides = [
-  'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600',
-  'https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=1600',
-  'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1600'
+  'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80&auto=format',
+  'https://images.unsplash.com/photo-1471193945509-9ad0617afabf?w=1600&q=80&auto=format',
+  'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1600&q=80&auto=format'
 ]
 
 const currentSlide = ref(0)
@@ -253,5 +253,31 @@ onUnmounted(() => {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Image Loading Optimization */
+img {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+img[src] {
+  animation: none;
+  background: none;
+}
+
+[data-theme="dark"] img {
+  background: linear-gradient(90deg, #2a2a35 25%, #1a1a24 50%, #2a2a35 75%);
+  background-size: 200% 100%;
 }
 </style>
