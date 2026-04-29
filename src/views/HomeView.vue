@@ -18,8 +18,6 @@
             <router-link to="/contact" class="cta-button cta-button-outline">Schedule Consultation</router-link>
           </div>
         </div>
-        <button class="carousel-btn prev" @click="changeSlide(-1)">❮</button>
-        <button class="carousel-btn next" @click="changeSlide(1)">❯</button>
       </div>
     </section>
 
