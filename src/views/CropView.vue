@@ -21,7 +21,7 @@
       <h2 class="section-title">Our <span>Solutions</span></h2>
       <div class="cards-grid">
         <div v-for="solution in solutions" :key="solution.title" class="card">
-          <img :src="solution.image" :alt="solution.title" class="card-img">
+          <img :src="solution.image" :alt="solution.title" class="card-img" loading="lazy">
           <div class="card-content">
             <h3>{{ solution.title }}</h3>
             <p>{{ solution.description }}</p>

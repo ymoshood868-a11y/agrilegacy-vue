@@ -22,7 +22,7 @@
       <h2 class="section-title">Our <span>Initiatives</span></h2>
       <div class="cards-grid">
         <div v-for="initiative in initiatives" :key="initiative.title" class="card">
-          <img :src="initiative.image" :alt="initiative.title" class="card-img">
+          <img :src="initiative.image" :alt="initiative.title" class="card-img" loading="lazy">
           <div class="card-content">
             <h3>{{ initiative.title }}</h3>
             <p>{{ initiative.description }}</p>

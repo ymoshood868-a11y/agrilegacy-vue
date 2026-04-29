@@ -21,7 +21,7 @@
       <h2 class="section-title">Featured <span>Posts</span></h2>
       <div class="cards-grid">
         <div v-for="post in posts" :key="post.title" class="blog-card">
-          <img :src="post.image" alt="Blog" class="blog-img">
+          <img :src="post.image" alt="Blog" class="blog-img" loading="lazy">
           <div class="blog-content">
             <div class="blog-date"><i class="far fa-calendar"></i> {{ post.date }}</div>
             <h3>{{ post.title }}</h3>

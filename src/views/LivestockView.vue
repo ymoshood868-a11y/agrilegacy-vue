@@ -22,7 +22,7 @@
       <h2 class="section-title">Our <span>Services</span></h2>
       <div class="cards-grid">
         <div v-for="service in services" :key="service.title" class="card">
-          <img :src="service.image" :alt="service.title" class="card-img">
+          <img :src="service.image" :alt="service.title" class="card-img" loading="lazy">
           <div class="card-content">
             <h3>{{ service.icon }} {{ service.title }}</h3>
             <p>{{ service.description }}</p>
