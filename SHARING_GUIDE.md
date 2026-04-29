@@ -49,7 +49,7 @@ PROJECT LINKS:
 • GitHub Repository: https://github.com/ymoshood868-a11y/agrilegacy-vue
 • Product Requirements Document: https://github.com/ymoshood868-a11y/agrilegacy-vue/blob/main/PRD_AgriLegacy.md
 • Presentation Slides: https://github.com/ymoshood868-a11y/agrilegacy-vue/blob/main/PRESENTATION_AgriLegacy.md
-• Live Website: [Add your deployment URL when ready]
+• Live Website: https://ymoshood868-a11y.github.io/agrilegacy-vue/
 
 KEY FEATURES:
 ✅ 9 complete pages (Home, Livestock, Aquaculture, Crops, Services, etc.)
@@ -87,7 +87,7 @@ It's called AgriLegacy - a farm management platform built with Vue.js.
 
 🔗 Check it out:
 Repository: https://github.com/ymoshood868-a11y/agrilegacy-vue
-Live Site: [Your deployment URL]
+Live Site: https://ymoshood868-a11y.github.io/agrilegacy-vue/
 
 Some cool features:
 • 9 fully responsive pages
@@ -115,7 +115,7 @@ I am writing to share one of my recent projects that demonstrates my web develop
 
 PROJECT: AgriLegacy - Smart Farm Management Platform
 
-LIVE DEMO: [Your deployment URL]
+LIVE DEMO: https://ymoshood868-a11y.github.io/agrilegacy-vue/
 SOURCE CODE: https://github.com/ymoshood868-a11y/agrilegacy-vue
 DOCUMENTATION: https://github.com/ymoshood868-a11y/agrilegacy-vue/blob/main/PRD_AgriLegacy.md
 
@@ -220,7 +220,7 @@ Vue.js 3 | TypeScript | Pinia | Vite | CSS3
 
 🔗 Check it out:
 GitHub: https://github.com/ymoshood868-a11y/agrilegacy-vue
-Live Demo: [Your URL]
+Live Demo: https://ymoshood868-a11y.github.io/agrilegacy-vue/
 
 This project taught me a lot about modern web development, responsive design, and performance optimization.
 
