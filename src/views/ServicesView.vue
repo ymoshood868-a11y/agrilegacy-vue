@@ -1,0 +1,46 @@
+<template>
+  <div>
+    <div class="page-banner" style="background-image: url('https://i.pinimg.com/1200x/cb/c8/eb/cbc8eb9389a17fd2d2e5bc6463548f3a.jpg');">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Premium Services</h1>
+        <p>Comprehensive Agricultural Solutions</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h2 class="section-title">What We <span>Offer</span></h2>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); line-height: 1.8;">
+          From farm analytics to AI-powered crop diagnosis, our comprehensive suite of services is designed to address every aspect of modern farm management.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <h2 class="section-title">Our <span>Services</span></h2>
+      <div class="cards-grid cards-grid-4">
+        <div v-for="service in services" :key="service.title" class="card">
+          <img :src="service.image" :alt="service.title" class="card-img">
+          <div class="card-content">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup lang="ts">
+const services = [
+  { title: 'Farm Analytics Suite', image: 'https://i.pinimg.com/1200x/cb/c8/eb/cbc8eb9389a17fd2d2e5bc6463548f3a.jpg', description: 'Real-time dashboards tracking 50+ KPIs including production metrics and financial performance.' },
+  { title: 'IoT Integration', image: 'https://i.pinimg.com/1200x/e2/8e/5a/e28e5a36eec51218776672e88c032b50.jpg', description: 'Connect 1000+ sensors, drones, and automated equipment for complete farm automation.' },
+  { title: 'Sustainable Practices', image: 'https://i.pinimg.com/1200x/08/3c/55/083c55d15ac970366dfc6e14f7da39c7.jpg', description: 'Carbon footprint tracking and organic certification assistance.' },
+  { title: 'Equipment Management', image: 'https://i.pinimg.com/736x/a3/ff/db/a3ffdbff23f0c0d7fb2c01604b8470e6.jpg', description: 'Predictive maintenance scheduling and fuel optimization.' },
+  { title: 'Market Intelligence', image: 'https://i.pinimg.com/1200x/29/85/b3/2985b395244c250651225d7f65279611.jpg', description: 'Real-time commodity prices and AI-powered selling recommendations.' },
+  { title: 'Labor Management', image: 'https://i.pinimg.com/1200x/eb/5e/5b/eb5e5b2cd867f2809fe37a086fe4aff7.jpg', description: 'Smart scheduling, performance tracking, and payroll integration.' },
+  { title: 'Blockchain Traceability', image: 'https://i.pinimg.com/1200x/e9/d1/fa/e9d1fa65aa6a7d8717b99ecf75f62239.jpg', description: 'End-to-end product tracking with immutable blockchain records.' },
+  { title: 'AI Crop Doctor', image: 'https://i.pinimg.com/1200x/ea/25/d5/ea25d5ede3ebe13387b3e998a58a0604.jpg', description: 'Instant disease detection via image recognition and AI treatment recommendations.' }
+]
+</script>
