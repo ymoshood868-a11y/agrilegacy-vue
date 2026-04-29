@@ -2,6 +2,16 @@
 
 This is the Vue 3 (Composition API) version of the AgriLegacy farm management website.
 
+## 🌐 Live Demo
+
+**Website:** [https://ymoshood868-a11y.github.io/agrilegacy-vue/](https://ymoshood868-a11y.github.io/agrilegacy-vue/)
+
+## 📚 Documentation
+
+- **Product Requirements Document:** [PRD_AgriLegacy.md](./PRD_AgriLegacy.md)
+- **Presentation Slides:** [PRESENTATION_AgriLegacy.md](./PRESENTATION_AgriLegacy.md)
+- **Sharing Guide:** [SHARING_GUIDE.md](./SHARING_GUIDE.md)
+
 ## Features
 
 - ✅ Vue 3 with Composition API
